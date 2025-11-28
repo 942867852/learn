@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\CQueue.h.obj",
+            "outputs": [
+                "D:\\CppProgram\\Test\\Test\\x64\\Debug\\vc145.pdb",
+                "x64\\Debug\\",
+                "D:\\CppProgram\\Test\\Test\\x64\\Debug\\CQueue.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "CQueue.h",
+                    "source-path": "d:\\cppprogram\\test\\test\\cqueue.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

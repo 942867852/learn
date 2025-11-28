@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\CQueue.obj",
+            "outputs": [
+                "x64\\Debug\\CQueue.h_769F7E84DED20D2C.ifc.dt.module.json",
+                "x64\\Debug\\CQueue.h_769F7E84DED20D2C.ifc.dt.d.json",
+                "x64\\Debug\\CQueue.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "D:\\CppProgram\\Test\\Test\\CQueue.h",
+                    "source-path": "d:\\cppprogram\\test\\test\\cqueue.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
