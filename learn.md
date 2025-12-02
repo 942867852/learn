@@ -59,7 +59,8 @@ git switch <分支名>
 git branch -d <分支名> //删除本地分支，当分支未合并时，使用-D强制删除
 git push origin --delete <分支名称>  //删除远端分支
 - 合并分支  
-git merge <分支名> //将当前分支合并到<分支名>
+git merge <分支名> //将当前分支合并到<分支名>  
+git merge origin/<分支名> //合并到远端分支
 
 
 
