@@ -37,7 +37,7 @@ commit之后需要修改内容，首先在文件里修改内容，然后使用gi
 # git 撤销操作
 |Git操作|Git命令|使用场景|注意事项|
 |:---:|:---:|:---:|:---:|
-|**discard**|git restore <文件名> (针对单个文件) git restore --hard (针对所有文件)|工作区的修改还未commit|舍弃掉工作区修改的文件|
+|**discard**|git restore <文件名> (针对单个文件)<br>git restore --hard (针对所有文件)|工作区的修改还未commit|舍弃掉工作区修改的文件|
 |**reset**|git reset <commit ID>|还原到某个commit的状态，舍弃掉之后的commit|如果reset已经推送到远端的commit，会造成强制推送，集成分支禁止强推|
 |**revert**|git revert <commit ID>|使用一个新的提交抵消掉某次commit的修改||
 |**amend**|git commit --amend|只能修改最新的一次commit|如果amend已经推送远端commit，会造成强制推送，集成分支禁止强推|  
