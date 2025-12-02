@@ -41,11 +41,24 @@ commit之后需要修改内容，首先在文件里修改内容，然后使用gi
 |**reset**|git reset <commit ID>|还原到某个commit的状态，舍弃掉之后的commit|如果reset已经推送到远端的commit，会造成强制推送，集成分支禁止强推|
 |**revert**|git revert <commit ID>|使用一个新的提交抵消掉某次commit的修改||
 |**amend**|git commit --amend|只能修改最新的一次commit|如果amend已经推送远端commit，会造成强制推送，集成分支禁止强推|  
-- git branch  
-查看本地分支  
--a 查看所有分支，包括远端  
-- git checkout -b feature  
-基于当前分支创建新分支  
+# 分支操作
+- 查看分支  
+git branch  
+-a 查看全部分支，包括本地和远端  
+- 创建分支  
+git checkout -b <分支名> //基于当前分支创建新分支  
+- 同步分支  
+    - 将本地分支同步到远端  
+    git push --set-upstream origin <分支名>  
+    - 将远端分支同步到本地  
+    git fetch //将远端内容拉取到本地，但是不执行合并。push = fetch + merge
+    git checkout <分支名> //将远端分支同步到本地
+- 切换分支  
+git switch <分支名>
+- 删除分支  
+git branch -d <分支名> //删除本地分支，当分支未合并时，使用-D强制删除
+git push origin --delete <分支名称>  //删除远端分支
+
 
 
 
