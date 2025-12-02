@@ -30,8 +30,10 @@ git show [commit ID] 显示commit的具体信息
 回到某次commit之前的内容，新的内容相当于重新commit上去的  
 上传到远端不需要强制推送  
 - git commit --amend  
+commit之后需要修改内容，首先在文件里修改内容，然后使用git add命令，再使用git commit --amend命令，修改上次的commit message  
 (应该是用于修改commit的message)  
 只能对最后一次修改生效  
+如果在amend之前已经推送到远端，则需要强制推送  
 
 
 
