@@ -24,6 +24,14 @@
 重置后需要强制推送才能上传，git push -f
 - git restore  
 //文件修改后还没有上传暂存区，也就是还没有commit，使用git restore命令可以取消修改
+- git show  
+git show [commit ID] 显示commit的具体信息  
+- git revert [commit ID]  
+回到某次commit之前的内容，新的内容相当于重新commit上去的  
+上传到远端不需要强制推送  
+- git commit --amend  
+(应该是用于修改commit的message)  
+只能对最后一次修改生效  
 
 
 
